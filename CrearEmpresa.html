@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <title>Registro de Empresa - TalentConnect</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <link rel="stylesheet" href="crearEmpresa.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="layout-container">
+        <header class="header">
+          <div class="header-content">
+            <img src="imagenes/Logo.jpg" alt="Logo TIID" class="header-logo" />
+          </div>
+        </header>
+        <div class="form-wrapper">
+          <div class="form-container">
+            <h2 class="form-title">Registro de Empresa</h2>
+            <form action="#" method="POST" class="form-elements">
+              <div>
+                <label class="form-label">
+                  <input
+                    placeholder="Nombre de la empresa"
+                    class="form-input"
+                    type="text"
+                    name="company_name"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="form-label">
+                  <select class="form-select" name="company_type">
+                    <option value="">Tipo de Empresa</option>
+                    <option value="desarrollo_software">
+                      Desarrollo de Software
+                    </option>
+                    <option value="redes_telecomunicaciones">
+                      Redes y Ciberseguridad
+                    </option>
+                    <option value="consultoria_ti">Consultoría TI</option>
+                  </select>
+                </label>
+              </div>
+              <div>
+                <label class="form-label">
+                  <input
+                    placeholder="Ubicación"
+                    class="form-input"
+                    type="text"
+                    name="location"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="form-label">
+                  <textarea
+                    placeholder="Descripción breve de la empresa"
+                    class="form-textarea"
+                    name="description"
+                  ></textarea>
+                </label>
+              </div>
+              <div>
+                <label class="form-label">
+                  <input
+                    placeholder="Email"
+                    class="form-input"
+                    type="email"
+                    name="email"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="form-label">
+                  <input
+                    placeholder="Contraseña"
+                    class="form-input"
+                    type="password"
+                    name="password"
+                    value=""
+                  />
+                </label>
+              </div>
+              <div class="button-container">
+                <button type="submit" class="submit-button">
+                  <span class="submit-button-text">Registrarse</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
