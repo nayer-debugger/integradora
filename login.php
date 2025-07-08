@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <title>UTTcam</title>
   <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link rel="stylesheet" href="2.css" />
+  <link rel="stylesheet" href="login.css" />
   <script defer src="3.js"></script>
 </head>
 <body>

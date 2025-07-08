@@ -1,0 +1,93 @@
+body {
+  font-family: Manrope, "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  margin-top: 3%;
+  display: inline-block;
+}
+
+.input-form {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  background-color: #f0f2f5;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000;
+  box-sizing: border-box;
+}
+
+.input-form::placeholder {
+  color: #60758a;
+}
+
+.btn-principal,
+.btn-secundario,
+.btn-sesion {
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.btn-principal {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-secundario {
+  background-color: #f0f2f5;
+  color: #000;
+}
+
+.btn-sesion {
+  background-color: #2563eb;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .input-form {
+    height: 3rem;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+
+  .btn-principal,
+  .btn-secundario,
+  .btn-sesion {
+    font-size: 0.95rem;
+    height: 2.2rem;
+    padding: 0 0.75rem;
+  }
+
+  nav a {
+    margin-top: 5%;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-form {
+    height: 2.8rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .btn-principal,
+  .btn-secundario,
+  .btn-sesion {
+    font-size: 0.9rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  nav a {
+    margin-top: 6%;
+  }
+}
