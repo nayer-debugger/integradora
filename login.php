@@ -60,9 +60,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <img src="Logo TIID.png" alt="Logo TIID" width="180" height="50">
       </div>
       <nav class="flex gap-9">
-        <a class="text-sm font-medium" href="#">Home</a>
-        <a class="text-sm font-medium" href="#">About</a>
-        <a class="text-sm font-medium" href="#">Contacto</a>
+        <a class="text-sm font-medium" href="#">Prueba</a>
+        <a class="text-sm font-medium" href="#">Prueba</a>
+        <a class="text-sm font-medium" href="#">Prueba</a>
         <button class="btn-sesion">Iniciar sesión</button>
       </nav>
     </header>
@@ -101,8 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           </div>
           <div class="flex flex-col gap-3">
             <button type="submit" class="btn-principal">Iniciar Sesión</button>
-            <a href="registroEmpresa.html" class="btn-secundario text-center flex justify-center items-center">Registrar Empresa</a>
-            <a href="registroEstudiante.html" class="btn-secundario text-center flex justify-center items-center">Registrar Estudiante</a>
+            <a href="crearEmpresa.html" class="btn-secundario text-center flex justify-center items-center">Registrar Empresa</a>
+            <a href="registro_estudiantes.html" class="btn-secundario text-center flex justify-center items-center">Registrar Estudiante</a>
           </div>
         </form>
       </div>
