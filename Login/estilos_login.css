@@ -1,0 +1,86 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  font-family: sans-serif;
+  background-color: #d3d3d3;
+}
+
+/* Encabezado */
+header {
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* Contenedor de login */
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.form-login {
+  background-color: #f7eded;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.form-login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.form-login label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.form-login input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.boton-inicio {
+  width: 100%;
+  background-color: #5a0000;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-secundario {
+  width: 100%;
+  background-color: #eee;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
