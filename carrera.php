@@ -34,9 +34,9 @@ if (isset($_GET['carrera_id'])) {
     <h2>Datos de la Carrera</h2>
 
     <form method="post" action="nivel.php">
-        <!-- Mostrar nombre solo como texto -->
+        <p><strong>ID de la carrera:</strong> <?= htmlspecialchars($carrera_id) ?></p>
         <p><strong>Nombre de la carrera:</strong> <?= htmlspecialchars($nombre_carrera) ?></p>
-        <!-- Enviar también el nombre por si lo necesitas en guardar_nivel.php -->
+
         <input type="hidden" name="nombre_carrera" value="<?= htmlspecialchars($nombre_carrera) ?>">
         <input type="hidden" name="carrera_id" value="<?= $carrera_id ?>">
 
