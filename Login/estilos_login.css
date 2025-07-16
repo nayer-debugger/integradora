@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* Cuerpo */
 body {
   font-family: sans-serif;
@@ -22,7 +23,7 @@ header {
   height: 60px;
 }
 
-/* Contenedor de login */
+
 .contenedor-login {
   display: flex;
   justify-content: center;
@@ -32,22 +33,22 @@ header {
 
 .form-login {
   background-color: #f0f2f5;
-  padding: 40px;  /* Aumentado de 30px a 40px */
+  padding: 40px;  
   border-radius: 10px;
-  width: 450px;  /* Aumentado de 300px a 450px */
-  max-width: 90%;  /* Añadido para responsividad */
+  width: 450px;  
+  max-width: 90%;  
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
 .form-login h2 {
   text-align: center;
-  margin-bottom: 30px;  /* Aumentado de 20px a 30px */
+  margin-bottom: 30px;  
   font-weight: bold;
   color: #000;
 }
 
 .form-login label {
-  margin-top: 15px;  /* Aumentado de 10px a 15px */
+  margin-top: 15px;  
   font-weight: bold;
   font-size: 14px;
   display: block;
@@ -55,9 +56,9 @@ header {
 
 .form-login input {
   width: 100%;
-  padding: 12px;  /* Aumentado de 10px a 12px */
-  margin-top: 8px;  /* Aumentado de 5px a 8px */
-  margin-bottom: 15px;  /* Aumentado de 10px a 15px */
+  padding: 12px;  
+  margin-top: 8px;  
+  margin-bottom: 15px;  
   border: 1px solid #f0f2f5;
   border-radius: 5px;
 }
@@ -67,8 +68,8 @@ header {
   background-color: #8c1c3d;
   color: white;
   border: none;
-  padding: 12px;  /* Aumentado de 10px a 12px */
-  margin-top: 15px;  /* Aumentado de 10px a 15px */
+  padding: 12px;  
+  margin-top: 15px;  
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
@@ -79,8 +80,8 @@ header {
   background-color: white;
   color: black;
   border: 1px solid white;
-  padding: 12px;  /* Aumentado de 10px a 12px */
-  margin-top: 15px;  /* Aumentado de 10px a 15px */
+  padding: 12px;  
+  margin-top: 15px;  
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
