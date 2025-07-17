@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro de Estudiante</title>
-  <link rel="stylesheet" href="registro_estudiante.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiante</title>
+    <link rel="stylesheet" href="registro_estudiante.css">
 </head>
 <body>
-  <header>
-    <img src="Logo.jpg" alt="Logo de Ingeniería en Tecnologías de la Información" />
-  </header>
+    <header>
+        <img src="Logo.jpg" alt="Logo del programa educativo" class="logo">
+    </header>
 
-  <main>
-    <div class="form-container">
-      <h2>Registro de Estudiante</h2>
-      <form action="#" method="POST">
-        <input type="text" placeholder="Ingrese su nombre(obligatorio)" required />
-        <input type="text" placeholder="Ingrese sus apellidos(obligatorio)" required />
-        <input type="text" placeholder="Ingrese su grupo(obligatorio)" required />
-        <input type="text" placeholder="Ingrese su número de matrícula(obligatorio)" required />
-        
-        <select required>
-          <option value="">Seleccione su carrera</option>
-          <option value="TI">Tecnologías de la Información</option>
-          <option value="II">Ingeniería Industrial</option>
-          <option value="LA">Licenciatura en Administración</option>
-        
-        </select>
-        
-        <input type="text" placeholder="Ingrese su teléfono(obligatorio)" required />
-        <input type="text" placeholder="Ingrese su domicilio(obligatorio)" required />
-        <input type="email" placeholder="Correo electrónico(obligatorio)" required />
-        <input type="password" placeholder="Ingrese una contraseña(obligatorio)" required />
-        
-        <button type="submit">Registrarse</button>
-      </form>
-    </div>
-  </main>
+    <main class="form-container">
+        <div class="form-box">
+            <h2>Registro de Estudiante</h2>
+            <form action="#" method="post">
+                <input type="text" placeholder="Ingrese su nombre(obligatorio)" required>
+                <input type="text" placeholder="Ingrese sus apellidos(obligatorio)" required>
+                <input type="text" placeholder="Ingrese su grupo(obligatorio)" required>
+                <input type="text" placeholder="Ingrese su número de matrícula(obligatorio)" required>
+                <select required>
+                    <option value="" disabled selected>Seleccione su carrera</option>
+                    <option value="TID">TID</option>
+                    <option value="ISC">ISC</option>
+                    <option value="II">II</option>
+                </select>
+                <input type="tel" placeholder="Ingrese su teléfono(obligatorio)" required>
+                <input type="text" placeholder="Ingrese su domicilio(obligatorio)" required>
+                <input type="email" placeholder="Correo electrónico(obligatorio)" required>
+                <input type="password" placeholder="Ingrese una contraseña(obligatorio)" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

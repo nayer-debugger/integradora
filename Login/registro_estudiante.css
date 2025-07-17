@@ -1,79 +1,85 @@
+
+
+/* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+/* Fondo general */
 body {
-  background-color: #d3d7dd;
+    background-color: #d3d7de;
 }
 
+/* Header con logo */
 header {
-  background-color: white;
-  padding: 15px;
-  text-align: left;
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-header img {
-  height: 30px;
+.logo {
+    height: 70px;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 85vh;
-}
-
+/* Contenedor principal */
 .form-container {
-  background-color: #edf0f4;
-  padding: 40px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 450px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 22px;
-  font-weight: 700;
-  color: #1c1c1c;
+/* Caja blanca del formulario */
+.form-box {
+    background-color: #f1f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-form input,
-form select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 6px;
-  font-size: 14px;
+/* Título */
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
 }
 
-form select {
-  background-color: white;
-  color: #333;
+/* Campos del formulario */
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
 }
 
-form input::placeholder {
-  color: #6c757d;
+/* Espacio adicional antes del botón */
+.form-box input:last-of-type {
+    margin-bottom: 20px;
 }
 
-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #891338;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Botón */
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #831843;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-form button:hover {
-  background-color: #6f0f2d;
+.form-box button:hover {
+    background-color: #6e0f37;
 }
