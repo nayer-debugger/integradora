@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil del Alumno</title>
+  <link rel="stylesheet" href="VisualizarPerfilEstudiante.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="Logo.jpg" alt="Logo" class="logo" />
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="nav-buttons">
+      <button>INICIO</button>
+      <button>POSTULACIONES</button>
+      <button>EMPRESAS</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Buscar..." />
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="icon-user">
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </nav>
+
+  <!-- Perfil del alumno -->
+  <main class="profile-container">
+    <div class="profile-card">
+      <img src="user-placeholder.png" alt="Foto Alumno" class="profile-img" />
+      <h2>Nombre Alumno</h2>
+      <p class="description">Descripción del Alumno</p>
+      <button class="edit-btn">Editar Perfil</button>
+    </div>
+
+    <div class="info-section">
+      <div class="section">
+        <h3>Acerca del Alumno</h3>
+        <hr />
+      </div>
+      <div class="section">
+        <h3>Breve descripción</h3>
+        <hr />
+      </div>
+      <div class="section">
+        <h3>Experiencia</h3>
+        <hr />
+        <label><input type="checkbox" /> Desarrollador Móvil</label>
+        <label><input type="checkbox" /> Desarrollador Web</label>
+        <label><input type="checkbox" /> Desarrollador de Software</label>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
