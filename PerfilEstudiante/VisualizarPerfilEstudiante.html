@@ -16,9 +16,9 @@
   <!-- Barra de navegación -->
   <nav class="navbar">
     <div class="nav-buttons">
-      <button>INICIO</button>
-      <button>POSTULACIONES</button>
-      <button>EMPRESAS</button>
+      <button onclick="irA('inicio')">INICIO</button>
+      <button onclick="irA('postulaciones')">POSTULACIONES</button>
+      <button onclick="irA('empresas')">EMPRESAS</button>
     </div>
 
     <div class="search-box">
@@ -34,29 +34,36 @@
   <!-- Perfil del alumno -->
   <main class="profile-container">
     <div class="profile-card">
-      <img src="user-placeholder.png" alt="Foto Alumno" class="profile-img" />
+      <div class="profile-img-container">
+        <img src="foto-alumno.jpg" alt="Foto del Alumno" class="profile-img" />
+      </div>
       <h2>Nombre Alumno</h2>
       <p class="description">Descripción del Alumno</p>
-      <button class="edit-btn">Editar Perfil</button>
+      <button class="edit-btn" onclick="irA('editar-perfil')">Editar Perfil</button>
     </div>
 
-    <div class="info-section">
-      <div class="section">
-        <h3>Acerca del Alumno</h3>
-        <hr />
-      </div>
-      <div class="section">
-        <h3>Breve descripción</h3>
-        <hr />
-      </div>
-      <div class="section">
-        <h3>Experiencia</h3>
-        <hr />
-        <label><input type="checkbox" /> Desarrollador Móvil</label>
-        <label><input type="checkbox" /> Desarrollador Web</label>
-        <label><input type="checkbox" /> Desarrollador de Software</label>
-      </div>
-    </div>
-  </main>
+
+
+  <script>
+    // Función simple para navegar entre páginas
+    function irA(pagina) {
+      switch(pagina) {
+        case 'inicio':
+          window.location.href = 'PaginaPrincipal-Estudiante/PaginaPrincipal.html';
+          break;
+        case 'postulaciones':
+          window.location.href = 'postulaciones.html';
+          break;
+        case 'empresas':
+          window.location.href = 'empresas.html';
+          break;
+        case 'editar-perfil':
+          window.location.href = 'editar-perfil.html';
+          break;
+        default:
+          alert('Página no encontrada');
+      }
+    }
+  </script>
 </body>
 </html>
