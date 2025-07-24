@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #d3d7de;
+  min-height: 100vh;
+}
+
+/* Logo */
+header {
+  background-color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  height: 70px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #831843;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+/* Botones de navegación */
+.nav-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.nav-buttons button:active {
+  transform: translateY(0);
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Search */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px 40px 10px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box i {
+  position: absolute;
+  right: 15px;
+  color: #666;
+  font-size: 16px;
+}
+
+/* User icon */
+.icon-user i {
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-user i:hover {
+  color: #ddd;
+}
+
+/* Perfil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: transparent;
+}
+
+.profile-img-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #666;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+/* Estilos para imagen real */
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Estilos para ícono (cuando no hay imagen) */
+.profile-icon {
+  font-size: 60px;
+  color: #666;
+}
+
+.profile-card h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.profile-card .description {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.edit-btn {
+  background-color: #831843;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #6d1336;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.edit-btn:active {
+  transform: translateY(0);
+  background-color: #5a0e2a;
+}
+
+/* Info */
+.info-section {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f1f4f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section h3 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #333;
+  font-size: 18px;
+}
+
+.section hr {
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Contenido del usuario */
+.user-content {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 10px 0;
+  min-height: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px dashed #ccc;
+}
+
+.experience-content {
+  margin-top: 10px;
+}
+
+.experience-content .user-content {
+  margin-bottom: 0;
+}
+
+/* Efectos hover para mejorar la experiencia */
+.user-content:hover {
+  border-color: #831843;
+  background-color: #fafbfc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  
+  .nav-buttons {
+    gap: 20px;
+  }
+  
+  .search-box input {
+    width: 200px;
+  }
+  
+  .profile-container {
+    padding: 30px 15px;
+  }
+  
+  .info-section {
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .search-box input {
+    width: 180px;
+  }
+  
+  .profile-img-container {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-icon {
+    font-size: 50px;
+  }
+}
