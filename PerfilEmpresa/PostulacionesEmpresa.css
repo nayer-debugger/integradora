@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.top-bar {
+    background-color: #8c0022;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 104px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.full-logo {
+    height: 400px;
+    width: auto;
+    max-width: 200%;
+}
+
+.navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon-tecnologias {
+    width: 200px;
+    height: 50px;
+    margin-right: 200px;
+}
+
+.navbar-title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.user-icon {
+    margin-left: auto;
+}
+
+.icon-user {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.postulaciones-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.postulaciones-card h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.0em;
+    text-align: left;
+}
+
+.postulaciones-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.postulaciones-card th,
+.postulaciones-card td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.postulaciones-card th {
+    background-color: #f8f8f8;
+    color: #666;
+    font-weight: 600;
+}
+
+.postulaciones-card tr:last-child td {
+    border-bottom: none;
+}
+
+.status-button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.status-enviada {
+    background-color: #56070C;
+}
+
+.status-revision {
+    background-color: #56070C;
+}
+
+.status-aceptada {
+    background-color: #56070C;
+}
+
+.status-rechazada {
+    background-color: #56070C;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+        gap: 10px;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .user-icon {
+        margin-top: 15px;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .postulaciones-card {
+        width: 95%;
+        padding: 20px;
+    }
+    .postulaciones-card th,
+    .postulaciones-card td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .top-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 10px;
+    }
+    .logo-section {
+        margin-bottom: 10px;
+    }
+    .full-logo {
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        font-size: 0.7em;
+    }
+    .navbar-title {
+        font-size: 0.9em;
+    }
+    .postulaciones-card h2 {
+        font-size: 1.5em;
+    }
+    .full-logo {
+        height: 60px;
+    }
+}
