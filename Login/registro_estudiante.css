@@ -1,68 +1,85 @@
 
-body {
+
+/* Reset básico */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #d1d5db;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+/* Fondo general */
+body {
+    background-color: #d3d7de;
+}
+
+/* Header con logo */
 header {
-    background-color: #ffffff;
-    padding: 10px 20px;
+    background-color: white;
+    padding: 15px 30px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    justify-content: flex-start;
 }
 
-header img {
-    height: 60px;
+.logo {
+    height: 70px;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: #f0f2f5;
-    border-radius: 8px;
+/* Contenedor principal */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
-h2 {
+/* Caja blanca del formulario */
+.form-box {
+    background-color: #f1f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.form-box h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: #000;
 }
 
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-input, select {
+/* Campos del formulario */
+.form-box input,
+.form-box select,
+.form-box textarea {
     width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
     font-size: 14px;
 }
 
-button {
+/* Espacio adicional antes del botón */
+.form-box input:last-of-type {
+    margin-bottom: 20px;
+}
+
+/* Botón */
+.form-box button {
     width: 100%;
     padding: 12px;
-    background-color: #4b0b0b;
+    background-color: #831843;
     color: white;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 5%;
-    margin-left: 3%;
 }
 
-button:hover {
-    background-color: #381608;
-}
-
-a{
-    color: #ffffff;
-    text-decoration: none;
-    
+.form-box button:hover {
+    background-color: #6e0f37;
 }

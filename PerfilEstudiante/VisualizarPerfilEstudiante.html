@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil del Alumno</title>
+  <link rel="stylesheet" href="VisualizarPerfilEstudiante.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <img src="Logo.jpg" alt="Logo" class="logo" />
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar">
+    <div class="nav-buttons">
+      <button onclick="irA('inicio')">INICIO</button>
+      <button onclick="irA('postulaciones')">POSTULACIONES</button>
+      <button onclick="irA('empresas')">EMPRESAS</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Buscar..." />
+      <i class="fas fa-search"></i>
+    </div>
+
+    <div class="icon-user">
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </nav>
+
+  <!-- Perfil del alumno -->
+  <main class="profile-container">
+    <div class="profile-card">
+      <div class="profile-img-container">
+        <img src="foto-alumno.jpg" alt="Foto del Alumno" class="profile-img" />
+      </div>
+      <h2>Nombre Alumno</h2>
+      <p class="description">Descripción del Alumno</p>
+      <button class="edit-btn" onclick="irA('editar-perfil')">Editar Perfil</button>
+    </div>
+
+
+
+  <script>
+    // Función simple para navegar entre páginas
+    function irA(pagina) {
+      switch(pagina) {
+        case 'inicio':
+          window.location.href = 'PaginaPrincipal-Estudiante/PaginaPrincipal.html';
+          break;
+        case 'postulaciones':
+          window.location.href = 'postulaciones.html';
+          break;
+        case 'empresas':
+          window.location.href = 'empresas.html';
+          break;
+        case 'editar-perfil':
+          window.location.href = 'editar-perfil.html';
+          break;
+        default:
+          alert('Página no encontrada');
+      }
+    }
+  </script>
+</body>
+</html>
