@@ -34,7 +34,7 @@ body {
 .main-container {
     display: flex;
     flex-grow: 1; /* Permite que ocupe el espacio restante */
-    background-color: #f0f2f5; /* Un gris más claro para el área de contenido principal */
+    background-color: #909090; /* Un gris más claro para el área de contenido principal */
 }
 
 /* Barra lateral */
@@ -97,11 +97,11 @@ body {
 }
 
 .publication-card h2 {
-    color: #333;
+    color: #000;
     margin-bottom: 25px;
     font-size: 1.8em;
     text-align: left;
-    border-bottom: 1px solid #eee; /* Línea debajo del título */
+    border-bottom: 1px solid #000; /* Línea debajo del título */
     padding-bottom: 15px;
 }
 
@@ -125,7 +125,7 @@ body {
     width: 100%;
     height: 120px; /* Altura del textarea */
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     border-radius: 8px;
     font-family: Arial, sans-serif;
     font-size: 1em;
@@ -167,7 +167,7 @@ body {
 }
 
 .publish-button:hover {
-    background-color: #350A06; /* Un tono más oscuro al pasar el ratón */
+    background-color: #350a0684; /* Un tono más oscuro al pasar el ratón */
 }
 
 /* Media Queries para responsividad */
