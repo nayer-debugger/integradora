@@ -12,7 +12,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   flex-direction: column;
   background-color: #d1d5db;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ body {
   align-items: center;
   white-space: nowrap;
   background-color: white;
-  padding: 1.25rem 2.5rem; 
+  padding: 1.2rem 2rem; 
 }
 
 .header-content {
@@ -41,7 +41,7 @@ body {
 }
 
 .header-logo {
-  height: 4rem; 
+  height: 3rem; 
   width: auto;
 }
 

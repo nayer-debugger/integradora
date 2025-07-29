@@ -1,87 +1,59 @@
+/* Importar la fuente Inter de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     background-color: #909090;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.top-bar {
-    background-color: #8c0022;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 104px;
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-}
-
-.full-logo {
-    height: 400px;
-    width: auto;
-    max-width: 200%;
+    color: #333;
 }
 
 .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.navbar-left {
+.navbar .logo {
     display: flex;
     align-items: center;
 }
 
-.icon-tecnologias {
-    width: 200px;
-    height: 50px;
-    margin-right: 200px;
+.navbar .logo img {
+    height: 50px; /* Ajusta según el tamaño de tu icono de menú */
+    margin-right: 10px;
 }
 
-.navbar-title {
-    font-weight: bold;
-    color: #333;
-    font-size: 1.1em;
-}
-
-.nav-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.navbar .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
 .navbar .nav-links a:hover {
     color: #56070C; /* Un color de hover, puedes cambiarlo */
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #555;
-    font-weight: 600;
-    padding: 5px 0;
-    transition: color 0.3s ease;
+.navbar .prerfil {
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
 
-.user-icon {
-    margin-left: auto;
-}
-
-.icon-user {
-    width: 40px;
-    height: 50px;
-    border-radius: 10%;
+.navbar .prerfil img {
+    width: 20px;
+    height: px;
+    border-radius: 15%;
+    object-fit: cover;
 }
 
 .content {
@@ -91,7 +63,6 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
-
 .postulaciones-card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -103,8 +74,8 @@ body {
 
 .postulaciones-card h2 {
     color: #333;
-    margin-bottom: 25px;
-    font-size: 2.0em;
+    margin-bottom: 35px;
+    font-size: 6.0em;
     text-align: left;
 }
 
@@ -114,9 +85,8 @@ body {
     margin-top: 20px;
 }
 
-.postulaciones-card th,
 .postulaciones-card td {
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     border-bottom: 1px solid #eee;
 }
@@ -124,41 +94,40 @@ body {
 .postulaciones-card th {
     background-color: #b3b3b3;
     color: #000000;
-    font-weight: 600;
+    font-weight: 1000;
 }
 
 .postulaciones-card tr:last-child td {
     border-bottom: none;
 }
 
-.status-button {
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
+
+.data-table .contact-email {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.data-table .contact-email:hover {
+    text-decoration: underline;
+}
+
+.btn-view-postulation {
+    background-color: #56070C; /* Rojo oscuro para el botón */
     color: white;
-    font-weight: bold;
-    cursor: default;
-    min-width: 100px;
-    text-align: center;
-    display: inline-block;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-.status-enviada {
-    background-color: #56070C;
+.btn-view-postulation:hover {
+    background-color: #56070C; /* Tono más oscuro al pasar el ratón */
 }
 
-.status-revision {
-    background-color: #56070C;
-}
-
-.status-aceptada {
-    background-color: #56070C;
-}
-
-.status-rechazada {
-    background-color: #56070C;
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -182,9 +151,9 @@ body {
     }
     .postulaciones-card {
         width: 95%;
-        padding: 20px;
+        padding: 50px;
     }
-    .postulaciones-card th,
+    
     .postulaciones-card td {
         padding: 10px;
         font-size: 0.9em;
@@ -192,7 +161,7 @@ body {
     .top-bar {
         flex-direction: column;
         height: auto;
-        padding: 15px 10px;
+        padding: 15px 20px;
     }
     .logo-section {
         margin-bottom: 10px;
