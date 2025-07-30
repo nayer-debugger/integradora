@@ -1,0 +1,372 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #FFFF; /* Un gris claro para el fondo del body */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.icon-tecnologias {
+    width: 200px;
+    height: 50px;
+    margin-right: 200px;
+}
+
+
+/* Encabezado principal (similar a image_a85935.png) */
+.main-header {
+    background-color: #909090; /* Fondo blanco */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 60px; /* Tamaño del logo circular */
+    width: 60px;
+    border-radius: 50%; /* Icono circular */
+    object-fit: contain;
+    margin-right: 15px;
+    border: 1px solid #8c0022; /* Borde alrededor del logo */
+    padding: 5px;
+}
+
+.header-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+}
+
+.header-title-top {
+    color: #8c0022;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.header-title-bottom {
+    color: #8c0022;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Contenedor de la derecha en el encabezado (links y perfil) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #56070C;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Icono de perfil circular */
+    object-fit: cover;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Área de Contenido Principal */
+.content {
+    flex-grow: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #909090; /* Un gris ligeramente diferente para el fondo del contenido */
+}
+
+/* Tarjeta de Reporte de Aceptaciones (como en image_cf8783.png) */
+.report-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%; /* Ajustado para que ocupe más espacio */
+    max-width: 1000px; /* Ancho máximo para el reporte */
+}
+
+.report-card h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.0em;
+    text-align: left;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilos de la Tabla */
+.report-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.report-card th,
+.report-card td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.report-card th {
+    background-color: #b3b3b3; /* Gris de encabezado como en image_a7f71b.png */
+    color: #000000;
+    font-weight: 600;
+}
+
+.report-card tr:last-child td {
+    border-bottom: none;
+}
+
+.contact-email {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+/* Botón "Descargar Reporte" de image_cf8783.png */
+.btn-download-report {
+    background-color: #56070C; /* Rojo oscuro de tu paleta */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download-report:hover {
+    background-color: #56070C; /* Tono más oscuro al pasar el ratón */
+}
+
+
+/* Tarjeta de Postulaciones (si se usa) */
+.postulaciones-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+}
+
+.postulaciones-card h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.0em;
+    text-align: left;
+}
+
+.postulaciones-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.postulaciones-card th,
+.postulaciones-card td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.postulaciones-card th {
+    background-color: #b3b3b3;
+    color: #000000;
+    font-weight: 600;
+}
+
+.postulaciones-card tr:last-child td {
+    border-bottom: none;
+}
+
+.status-button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    min-width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.status-enviada {
+    background-color: #7a0b17;
+}
+
+.status-en-revision {
+    background-color: #ff9800;
+}
+
+.status-aceptada {
+    background-color: #4CAF50;
+}
+
+.status-rechazada {
+    background-color: #f44336;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+    .header-left {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .header-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .header-title-container {
+        align-items: center;
+    }
+    .header-right {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-links li a {
+        padding: 8px 0;
+        display: block;
+    }
+    .profile-icon {
+        margin-top: 10px;
+    }
+    .content {
+        padding: 20px 10px;
+    }
+    .report-card, .postulaciones-card {
+        width: 95%;
+        padding: 20px;
+    }
+    .report-card th, .report-card td,
+    .postulaciones-card th, .postulaciones-card td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .search-bar input {
+        padding: 10px 12px;
+    }
+    .btn-download-report {
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+    .status-button {
+        padding: 6px 10px;
+        font-size: 0.75em;
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        padding: 10px;
+    }
+    .header-logo {
+        height: 50px;
+        width: 50px;
+    }
+    .header-title-top {
+        font-size: 0.8em;
+    }
+    .header-title-bottom {
+        font-size: 1em;
+    }
+    .nav-links {
+        gap: 8px;
+    }
+    .nav-links li a {
+        font-size: 0.9em;
+    }
+    .profile-icon {
+        width: 35px;
+        height: 35px;
+    }
+    .report-card h2, .postulaciones-card h2 {
+        font-size: 1.8em;
+    }
+    .report-card th, .report-card td,
+    .postulaciones-card th, .postulaciones-card td {
+        padding: 8px;
+        font-size: 0.8em;
+    }
+}
