@@ -8,8 +8,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-  <!-- Encabezado -->
-  <header>
+
+  <!-- Encabezado con logo -->
+  <header class="header">
     <img src="Logo.jpg" alt="Logo" class="logo" />
   </header>
 
@@ -32,24 +33,40 @@
   </nav>
 
   <!-- Perfil del alumno -->
-  <main class="profile-container">
-    <div class="profile-card">
-      <div class="profile-img-container">
-        <img src="foto-alumno.jpg" alt="Foto del Alumno" class="profile-img" />
-      </div>
-      <h2>Nombre Alumno</h2>
-      <p class="description">Descripción del Alumno</p>
-      <button class="edit-btn" onclick="irA('editar-perfil')">Editar Perfil</button>
+  <main class="profile-section">
+    <div class="profile-img-container">
+      <img src="foto-alumno.jpg" alt="Foto del Alumno" class="profile-img" />
     </div>
+    <h2 class="student-name">Nombre Alumno</h2>
+    <p class="student-description">Descripción del Alumno</p>
+    <button class="edit-btn" onclick="irA('editar-perfil')">Editar Perfil</button>
 
+    <!-- Información del alumno -->
+    <div class="info-section">
+      <div class="section">
+        <h3>Acerca del Alumno</h3>
+        <p class="info-text">informacion del alumno</p>
+      </div>
 
+      <div class="section">
+        <h3>Breve descripción</h3>
+        <p class="info-text">Descripcipn del alumno</p>
+      </div>
+    </div>
+  </main>
+
+    <div class="section">
+        <h3>Experiencia</h3>
+        <p class="info-text">Experiencia del alumno</p>
+      </div>
+    </div>
+  </main>
 
   <script>
-    // Función simple para navegar entre páginas
     function irA(pagina) {
       switch(pagina) {
         case 'inicio':
-          window.location.href = 'PaginaPrincipal-Estudiante/PaginaPrincipal.html';
+          window.location.href = 'PaginaPrincipal.html';
           break;
         case 'postulaciones':
           window.location.href = 'postulaciones.html';
@@ -60,8 +77,6 @@
         case 'editar-perfil':
           window.location.href = 'editar-perfil.html';
           break;
-        default:
-          alert('Página no encontrada');
       }
     }
   </script>
