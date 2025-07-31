@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px; /* Reducido de 1200px a 1000px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.icon-tecnologias {
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right ul li {
+    margin-right: 25px;
+}
+.navbar-right ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+.navbar-right ul li a:hover {
+    color: #56070C;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-area {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.sidebar-placeholder {
+    flex-basis: 250px;
+    min-width: 200px;
+}
+
+.admin-panel-section {
+    flex-grow: 1;
+    background-color: #f0f2f5;
+    padding: 0 40px; /* Aumentado el padding horizontal para reducir el ancho del contenido */
+}
+
+.admin-panel-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.admin-panel-header p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.stats-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex: 1;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.quick-actions h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.button-primary {
+    background-color: #56070C;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #56070C;
+}

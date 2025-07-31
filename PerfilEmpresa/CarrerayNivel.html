@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Búsqueda y Filtros</title>
+    <link rel="stylesheet" href="CarrerayNivel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Logo.jpg" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+
+        <div class="filters-section">
+            <h2 class="filters-title">Filtros</h2>
+
+            <div class="filter-group">
+                <label for="carrera" class="filter-label">Carrera</label>
+                <div class="select-wrapper">
+                    <select id="carrera" class="filter-select">
+                        <option value="">Selecciona una carrera</option>
+                        </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <label for="nivel" class="filter-label">Nivel</label>
+                <div class="select-wrapper">
+                    <select id="nivel" class="filter-select">
+                        <option value="">Selecciona un nivel</option>
+                        </select>
+                    <i class="fas fa-chevron-down select-arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
