@@ -39,7 +39,7 @@ body {
 
 /* Barra lateral */
 .sidebar {
-    width: 250px; /* Ancho de la barra lateral */
+    width: 220px; /* Ancho de la barra lateral */
     background-color: #f0f2f5; /* Mismo color que el fondo del main-container */
     padding: 30px 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); /* Sombra a la derecha de la barra lateral */
@@ -60,7 +60,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #333; /* Color del texto de navegación */
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 500;
     padding: 10px 15px;
     border-radius: 8px; /* Ligeramente redondeado */
@@ -81,7 +81,7 @@ body {
 /* Área de contenido principal */
 .content-area {
     flex-grow: 1; /* Ocupa el resto del espacio */
-    padding: 40px;
+    padding: 50px;
     display: flex;
     justify-content: center; /* Centra la tarjeta de publicación */
     align-items: flex-start; /* Alinea la tarjeta en la parte superior */
@@ -89,9 +89,9 @@ body {
 
 .publication-card {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     max-width: 700px; /* Ancho máximo para la tarjeta de publicación */
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .attachment-icon {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #555;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -159,7 +159,7 @@ body {
     background-color: #ffff; /* Color del botón publicar */
     color: rgb(20, 1, 1);
     border: 350A06;
-    padding: 10px 25px;
+    padding: 5px 20px;
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
