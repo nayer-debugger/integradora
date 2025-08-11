@@ -22,13 +22,15 @@
       <button onclick="irA('empresas')">EMPRESAS</button>
     </div>
 
-    <div class="search-box">
-      <input type="text" placeholder="Buscar..." />
-      <i class="fas fa-search"></i>
-    </div>
+    <div class="nav-right">
+      <div class="search-box">
+        <input type="text" placeholder="Buscar..." />
+        <i class="fas fa-search"></i>
+      </div>
 
-    <div class="icon-user">
-      <i class="fas fa-user-circle"></i>
+      <button class="icon-user" onclick="irA('perfil-usuario')">
+        <i class="fas fa-user-circle"></i>
+      </button>
     </div>
   </nav>
 
@@ -52,10 +54,8 @@
         <h3>Breve descripción</h3>
         <p class="info-text">Descripcipn del alumno</p>
       </div>
-    </div>
-  </main>
 
-    <div class="section">
+      <div class="section">
         <h3>Experiencia</h3>
         <p class="info-text">Experiencia del alumno</p>
       </div>
@@ -76,6 +76,9 @@
           break;
         case 'editar-perfil':
           window.location.href = 'editar-perfil.html';
+          break;
+        case 'perfil-usuario':
+          window.location.href = 'perfil-usuario.html';
           break;
       }
     }

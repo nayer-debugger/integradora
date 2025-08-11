@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +37,7 @@ body {
 
 .nav-buttons {
   display: flex;
-  gap: 40px; /* mayor separación entre botones */
+  gap: 40px;
 }
 
 .nav-buttons button {
@@ -54,6 +56,13 @@ body {
   background-color: rgba(255,255,255,0.2);
 }
 
+/* Alineación del buscador e icono */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 .search-box {
   display: flex;
   align-items: center;
@@ -64,7 +73,7 @@ body {
   padding: 12px 45px 12px 15px;
   border-radius: 5px;
   border: none;
-  width: 300px;
+  width: 320px;
   font-size: 15px;
   outline: none;
 }
@@ -76,10 +85,15 @@ body {
   font-size: 16px;
 }
 
-.icon-user i {
-  font-size: 38px; /* más grande */
-  color: white;
+.icon-user {
+  background: none;
+  border: none;
   cursor: pointer;
+}
+
+.icon-user i {
+  font-size: 38px;
+  color: white;
 }
 
 /* Perfil */
@@ -136,7 +150,7 @@ body {
 
 /* Información del perfil */
 .info-section {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   background-color: #f1f4f9;
   padding: 30px;
@@ -168,7 +182,7 @@ body {
   }
 
   .search-box input {
-    width: 250px;
+    width: 200px;
   }
 
   .icon-user i {
