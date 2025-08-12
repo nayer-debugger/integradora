@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Empresas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <img src="Logo.jpg" alt="Logo" class="logo" />
+    <h1 class="titulo-panel">Panel de empresas</h1>
+  </header>
+
+  <!-- Menú navegación -->
+  <nav class="nav-bar">
+    <div class="botones-nav">
+      <button onclick="location.href='inicio.html'">Inicio</button>
+      <button onclick="location.href='postulaciones.html'">Postulaciones</button>
+    </div>
+    <div class="icono-perfil">
+      <img src="avatar.png" alt="Perfil" />
+    </div>
+  </nav>
+
+  <!-- Buscador -->
+  <section class="buscador">
+    <div class="buscador-input">
+      <img src="buscar.png" alt="Buscar" class="icono-buscar" />
+      <input id="busqueda" type="text" placeholder="BUSCAR EMPRESA" />
+      <img src="x.png" alt="Cerrar" class="icono-cerrar" onclick="limpiarBusqueda()" />
+    </div>
+  </section>
+
+  <!-- Lista de empresas -->
+  <main class="empresas-lista">
+    <div class="empresa-item">
+      <img src="" alt="Empresa" class="empresa-img" />
+      <button class="empresa-nombre" onclick="location.href='empresa.html'">Empresa</button>
+      <div class="empresa-cupos">2 LUGARES</div>
+    </div>
+
+    <div class="empresa-item">
+      <img src="" alt="Empresa" class="empresa-img" />
+      <button class="empresa-nombre" onclick="location.href='empresa.html'">Empresa</button>
+      <div class="empresa-cupos">4 LUGARES</div>
+    </div>
+
+    <div class="empresa-item">
+      <img src="" alt="Empresa" class="empresa-img" />
+      <button class="empresa-nombre" onclick="location.href='empresa.html'">Empresa</button>
+      <div class="empresa-cupos">2 LUGARES</div>
+    </div>
+
+    <div class="empresa-item">
+      <img src="" alt="Empresa" class="empresa-img" />
+      <button class="empresa-nombre" onclick="location.href='empresa.html'">Empresa</button>
+      <div class="empresa-cupos">4 LUGARES</div>
+    </div>
+  </main>
+
+  <!-- JS para limpiar buscador -->
+  <script>
+    function limpiarBusqueda() {
+      document.getElementById('busqueda').value = '';
+    }
+  </script>
+</body>
+</html>
